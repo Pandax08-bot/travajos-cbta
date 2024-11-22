@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d4efdf;
+    color: #004d40;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007941;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    padding: 10px;
+    background-color: #006e3b7a; /* Color de fondo para la barra de navegación */
+}
+nav ul {
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Para que ocupe todo el ancho */
+    display: flex;
+    justify-content: space-between; /* Distribuir los elementos */
+}
+nav li {
+    flex: 1; /* Cada elemento ocupa el mismo espacio */
+    text-align: center; /* Centrar el texto dentro de cada elemento */
+}
+nav a {
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    padding: 10px; /* Espaciado alrededor del texto */
+    display: block; /* Hacer que el enlace ocupe todo el espacio del li */
+}
+
+NAv ul li a {
+    text-decoration: none; /* Quitar el subrayado de los enlaces */
+    color: black; /* Color del texto por defecto */
+    padding: 10px; /* Espaciado alrededor del texto */
+    display: inline-block; /* Para que el padding funcione correctamente */
+}
+
+/* Efecto al pasar el cursor sobre los enlaces */
+NAv ul li a:hover {
+    color: green; /* Cambia el color del texto al pasar el cursor */
+    background-color: rgb(151, 236, 148); /* Cambia el color de fondo al pasar el cursor */
+}
+
+footer{
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 0.2em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+content {
+    padding: 2em;
+}
+
+.image-right {
+    float: right; /* Hace que la imagen flote a la derecha */
+    margin-left: 20px;
+}
+
+.join-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+@media (max-width: 768px) {}
+    NAv ul li {
+        display: block; /* Cambia a bloque en pantallas más pequeñas */
+        text-align: center; /* Centra el texto */
+    }
+
+
+
+.imagen {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.imagen:hover {
+    transform: scale(1.05);
+}
+.imagen a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.container {
+    display: flex; /* Usamos flexbox para alinear en fila */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente fila si no hay espacio */
+    gap: 10px; /* Espacio entre los elementos */
+}
+.item {
+  background-color: #ffffff;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #b2dfdb;
+}
